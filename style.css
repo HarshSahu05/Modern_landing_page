@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "gilroy";
     box-sizing: border-box;
 }
 html, body{
@@ -26,10 +27,12 @@ html, body{
     background-color:black;
 }
 #mainarea{
+    position: relative;
     margin: 0 auto;
     width: 80%;
     height: 100vh;
     max-width: 1920px;
+    border: 1px solid red;
     
 }
 #nav{
@@ -54,4 +57,43 @@ html, body{
     font-weight: 700;
     letter-spacing: 1px;
     color: white;
+}
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#heroleft{
+    min-width: 50%;
+}
+#heroleft .elem{
+    height: 9vw;
+    overflow: hidden;
+}
+#heroleft .elem h1{
+    line-height: 0.9;
+    font-family: "kajiro";
+    color: #fff;
+    font-weight: 100;
+    font-size: 11vw;
+}
+#heroleft button{
+    margin-top: 2vw;
+    padding: 0.8vw 2vw;
+    font-family: "kajiro";
+    font-size: 2vw;
+}
+
+#heroright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 25%;
+    color: #fff;
+    background-color: green;
+    
 }
